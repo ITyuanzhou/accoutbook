@@ -1,0 +1,15 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.zy.model.TbAttachEntity" table="tb_attach" schema="dbo" catalog="accountbook">
+        <id name="aid" column="aid">
+           <generator class="uuid2" />
+        </id>
+        <property name="afileName" column="afileName"/>
+        <property name="afileUuid" column="afileUUID"/>
+        <property name="afilePosition" column="afilePosition"/>
+    </class>
+</hibernate-mapping>

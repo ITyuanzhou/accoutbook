@@ -1,0 +1,348 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<dataSource name="accountbook@192.168.24.56">
+  <database-model serializer="dbm" rdbms="MSSQL" format-version="4.2">
+    <root id="1"/>
+    <database id="2" parent="1" name="accountbook">
+      <ObjectId>7</ObjectId>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </database>
+    <database id="3" parent="1" name="master">
+      <ObjectId>1</ObjectId>
+    </database>
+    <database id="4" parent="1" name="tempdb">
+      <ObjectId>2</ObjectId>
+    </database>
+    <database id="5" parent="1" name="model">
+      <ObjectId>3</ObjectId>
+    </database>
+    <database id="6" parent="1" name="msdb">
+      <ObjectId>4</ObjectId>
+    </database>
+    <database id="7" parent="1" name="ReportServer$SQLEXPRESS">
+      <ObjectId>5</ObjectId>
+    </database>
+    <database id="8" parent="1" name="ReportServer$SQLEXPRESSTempDB">
+      <ObjectId>6</ObjectId>
+    </database>
+    <schema id="9" parent="2" name="dbo">
+      <ObjectId>1</ObjectId>
+      <IntrospectionTimestamp>2017-07-20.10:11:00.373</IntrospectionTimestamp>
+      <Current>1</Current>
+      <Visible>1</Visible>
+    </schema>
+    <schema id="10" parent="2" name="guest">
+      <ObjectId>2</ObjectId>
+    </schema>
+    <schema id="11" parent="2" name="INFORMATION_SCHEMA">
+      <ObjectId>3</ObjectId>
+    </schema>
+    <schema id="12" parent="2" name="sys">
+      <ObjectId>4</ObjectId>
+    </schema>
+    <schema id="13" parent="2" name="db_owner">
+      <ObjectId>16384</ObjectId>
+    </schema>
+    <schema id="14" parent="2" name="db_accessadmin">
+      <ObjectId>16385</ObjectId>
+    </schema>
+    <schema id="15" parent="2" name="db_securityadmin">
+      <ObjectId>16386</ObjectId>
+    </schema>
+    <schema id="16" parent="2" name="db_ddladmin">
+      <ObjectId>16387</ObjectId>
+    </schema>
+    <schema id="17" parent="2" name="db_backupoperator">
+      <ObjectId>16389</ObjectId>
+    </schema>
+    <schema id="18" parent="2" name="db_datareader">
+      <ObjectId>16390</ObjectId>
+    </schema>
+    <schema id="19" parent="2" name="db_datawriter">
+      <ObjectId>16391</ObjectId>
+    </schema>
+    <schema id="20" parent="2" name="db_denydatareader">
+      <ObjectId>16392</ObjectId>
+    </schema>
+    <schema id="21" parent="2" name="db_denydatawriter">
+      <ObjectId>16393</ObjectId>
+    </schema>
+    <table id="22" parent="9" name="tb_attach">
+      <ObjectId>885578193</ObjectId>
+      <Comment>文件信息表</Comment>
+      <CreatedTimestamp>2017-07-20.10:08:14.153</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-20.10:10:03.883</ModifiedTimestamp>
+    </table>
+    <table id="23" parent="9" name="tb_billing">
+      <ObjectId>565577053</ObjectId>
+      <Comment>账单信息表</Comment>
+      <CreatedTimestamp>2017-07-19.17:22:06.270</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.297</ModifiedTimestamp>
+    </table>
+    <table id="24" parent="9" name="tb_billingType">
+      <ObjectId>597577167</ObjectId>
+      <Comment>账单类型</Comment>
+      <CreatedTimestamp>2017-07-19.17:22:06.280</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.290</ModifiedTimestamp>
+    </table>
+    <table id="25" parent="9" name="tb_detailAABilling">
+      <ObjectId>629577281</ObjectId>
+      <Comment>AA账单明细</Comment>
+      <CreatedTimestamp>2017-07-19.17:22:06.280</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.293</ModifiedTimestamp>
+    </table>
+    <table id="26" parent="9" name="tb_user">
+      <ObjectId>677577452</ObjectId>
+      <Comment>用户信息表</Comment>
+      <CreatedTimestamp>2017-07-19.17:22:06.287</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-20.10:10:03.887</ModifiedTimestamp>
+    </table>
+    <column id="27" parent="22" name="aid">
+      <Position>1</Position>
+      <Comment>文件标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="28" parent="22" name="afileName">
+      <Position>2</Position>
+      <Comment>文件名</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="29" parent="22" name="afileUUID">
+      <Position>3</Position>
+      <Comment>文件UUID</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="30" parent="22" name="afilePosition">
+      <Position>4</Position>
+      <Comment>文件存放位置</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="31" parent="22" name="PK_TB_ATTACH">
+      <Position>1</Position>
+      <ColNames>aid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="32" parent="22" name="PK_TB_ATTACH">
+      <ObjectId>901578250</ObjectId>
+      <CreatedTimestamp>2017-07-20.10:08:14.157</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-20.10:08:14.157</ModifiedTimestamp>
+      <ColNames>aid</ColNames>
+      <UnderlyingIndexName>PK_TB_ATTACH</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="33" parent="23" name="bid">
+      <Position>1</Position>
+      <Comment>标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="34" parent="23" name="buserID">
+      <Position>2</Position>
+      <Comment>用户id</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="35" parent="23" name="btotalAmount">
+      <Position>3</Position>
+      <Comment>金额</Comment>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="36" parent="23" name="bttypeID">
+      <Position>4</Position>
+      <Comment>标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="37" parent="23" name="btime">
+      <Position>5</Position>
+      <Comment>发起时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="38" parent="23" name="bremark">
+      <Position>6</Position>
+      <Comment>备注</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="39" parent="23" name="bisAA">
+      <Position>7</Position>
+      <Comment>是否为AA</Comment>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <index id="40" parent="23" name="PK_TB_BILLING">
+      <Position>1</Position>
+      <ColNames>bid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="41" parent="23" name="PK_TB_BILLING">
+      <ObjectId>581577110</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.273</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.273</ModifiedTimestamp>
+      <ColNames>bid</ColNames>
+      <UnderlyingIndexName>PK_TB_BILLING</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="42" parent="23" name="FK_TB_BILLI_USER_BILL_TB_USER">
+      <ObjectId>725577623</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.290</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.290</ModifiedTimestamp>
+      <ColNames>buserID</ColNames>
+      <RefTableName>tb_user</RefTableName>
+      <RefKeyName>PK_TB_USER</RefKeyName>
+      <RefColNames>uid</RefColNames>
+    </foreign-key>
+    <foreign-key id="43" parent="23" name="FK_TB_BILLI_BILLINGTY_TB_BILLI">
+      <ObjectId>709577566</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.290</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.290</ModifiedTimestamp>
+      <ColNames>bttypeID</ColNames>
+      <RefTableName>tb_billingType</RefTableName>
+      <RefKeyName>PK_TB_BILLINGTYPE</RefKeyName>
+      <RefColNames>btid</RefColNames>
+    </foreign-key>
+    <column id="44" parent="24" name="btid">
+      <Position>1</Position>
+      <Comment>标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="45" parent="24" name="bttypeName">
+      <Position>2</Position>
+      <Comment>类型名称</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="46" parent="24" name="PK_TB_BILLINGTYPE">
+      <Position>1</Position>
+      <ColNames>btid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="47" parent="24" name="PK_TB_BILLINGTYPE">
+      <ObjectId>613577224</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.280</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.280</ModifiedTimestamp>
+      <ColNames>btid</ColNames>
+      <UnderlyingIndexName>PK_TB_BILLINGTYPE</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <column id="48" parent="25" name="did">
+      <Position>1</Position>
+      <Comment>标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="49" parent="25" name="dbillingID">
+      <Position>2</Position>
+      <Comment>标识号</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="50" parent="25" name="duserID">
+      <Position>3</Position>
+      <Comment>用户id</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="51" parent="25" name="damount">
+      <Position>4</Position>
+      <Comment>金额</Comment>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="52" parent="25" name="dchargeState">
+      <Position>5</Position>
+      <Comment>扣费状态（1表示已经扣费）</Comment>
+      <DataType>int|0</DataType>
+      <NotNull>1</NotNull>
+      <DefaultExpression>0</DefaultExpression>
+    </column>
+    <index id="53" parent="25" name="PK_TB_DETAILAABILLING">
+      <Position>1</Position>
+      <ColNames>did</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="54" parent="25" name="PK_TB_DETAILAABILLING">
+      <ObjectId>645577338</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.280</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.280</ModifiedTimestamp>
+      <ColNames>did</ColNames>
+      <UnderlyingIndexName>PK_TB_DETAILAABILLING</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="55" parent="25" name="FK_TB_DETAI_BILLING_D_TB_BILLI">
+      <ObjectId>741577680</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.290</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.290</ModifiedTimestamp>
+      <ColNames>dbillingID</ColNames>
+      <RefTableName>tb_billing</RefTableName>
+      <RefKeyName>PK_TB_BILLING</RefKeyName>
+      <RefColNames>bid</RefColNames>
+    </foreign-key>
+    <foreign-key id="56" parent="25" name="FK_TB_DETAI_USER_DETA_TB_USER">
+      <ObjectId>757577737</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.290</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.290</ModifiedTimestamp>
+      <ColNames>duserID</ColNames>
+      <RefTableName>tb_user</RefTableName>
+      <RefKeyName>PK_TB_USER</RefKeyName>
+      <RefColNames>uid</RefColNames>
+    </foreign-key>
+    <column id="57" parent="26" name="uid">
+      <Position>1</Position>
+      <Comment>用户id</Comment>
+      <DataType>varchar(50)|0</DataType>
+      <NotNull>1</NotNull>
+    </column>
+    <column id="58" parent="26" name="upwd">
+      <Position>2</Position>
+      <Comment>用户密码</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="59" parent="26" name="uname">
+      <Position>3</Position>
+      <Comment>用户姓名</Comment>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <column id="60" parent="26" name="upersonBalance">
+      <Position>4</Position>
+      <Comment>个人账户余额</Comment>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="61" parent="26" name="uaaBalance">
+      <Position>5</Position>
+      <Comment>AA账户余额</Comment>
+      <DataType>float|0</DataType>
+    </column>
+    <column id="62" parent="26" name="ulastLoginTime">
+      <Position>6</Position>
+      <Comment>上一次登录的时间</Comment>
+      <DataType>datetime|0</DataType>
+    </column>
+    <column id="63" parent="26" name="uavatarAttachID">
+      <Position>7</Position>
+      <DataType>varchar(50)|0</DataType>
+    </column>
+    <index id="64" parent="26" name="PK_TB_USER">
+      <Position>1</Position>
+      <ColNames>uid</ColNames>
+      <Clustering>1</Clustering>
+      <Unique>1</Unique>
+    </index>
+    <key id="65" parent="26" name="PK_TB_USER">
+      <ObjectId>693577509</ObjectId>
+      <CreatedTimestamp>2017-07-19.17:22:06.287</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-19.17:22:06.287</ModifiedTimestamp>
+      <ColNames>uid</ColNames>
+      <UnderlyingIndexName>PK_TB_USER</UnderlyingIndexName>
+      <Primary>1</Primary>
+    </key>
+    <foreign-key id="66" parent="26" name="FK_tb_user_tb_attach">
+      <ObjectId>917578307</ObjectId>
+      <CreatedTimestamp>2017-07-20.10:10:03.883</CreatedTimestamp>
+      <ModifiedTimestamp>2017-07-20.10:10:03.883</ModifiedTimestamp>
+      <ColNames>uavatarAttachID</ColNames>
+      <RefTableName>tb_attach</RefTableName>
+      <RefKeyName>PK_TB_ATTACH</RefKeyName>
+      <RefColNames>aid</RefColNames>
+    </foreign-key>
+  </database-model>
+</dataSource>

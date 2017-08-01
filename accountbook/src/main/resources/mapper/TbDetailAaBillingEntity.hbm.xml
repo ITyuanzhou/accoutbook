@@ -1,0 +1,16 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.zy.model.TbDetailAaBillingEntity" table="tb_detailAABilling" schema="dbo" catalog="accountbook">
+        <id name="did" column="did"/>
+        <property name="damount" column="damount"/>
+        <property name="dchargeState" column="dchargeState"/>
+
+        <many-to-one name="dbilling" class="com.zy.model.TbBillingEntity" column="dbillingID"></many-to-one>
+        <many-to-one name="duser" class="com.zy.model.TbUserEntity" column="duserID"></many-to-one>
+
+    </class>
+</hibernate-mapping>

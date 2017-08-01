@@ -1,0 +1,23 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.zy.model.TbBillingEntity" table="tb_billing" schema="dbo" catalog="accountbook">
+        <id name="bid" column="bid">
+            <generator class="uuid2" />
+        </id>
+        <property name="btotalAmount" column="btotalAmount"/>
+        <property name="btime" column="btime"/>
+        <property name="bremark" column="bremark"/>
+        <property name="bisAa" column="bisAA"/>
+
+        <many-to-one name="buser" class="com.zy.model.TbUserEntity" column="buserID"></many-to-one>
+        <many-to-one name="bbillingType" class="com.zy.model.TbBillingTypeEntity" column="bttypeID"></many-to-one>
+        <set name="detailBillings">
+            <key column="dbillingID"></key>
+            <one-to-many class="com.zy.model.TbDetailAaBillingEntity"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>
