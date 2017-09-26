@@ -1,5 +1,12 @@
 /*常量*/
 var CONSTANT = {
+   /****************************项目常量Start***************************/
+    SERVERURL:"",                          //服务器地址IP 'http://192.168.24.56:8080'
+    FILEBOUNDSYMBOL : "_zy_",              //文件名UUID跟原本文件名之间的连接符
+    LOGINURL: "/login",                    //登录页面URL
+
+    /****************************项目常量End***************************/
+
     DATA_TABLES : {
         DEFAULT_OPTION : { //DataTables初始化选项
             pagingType: "full_numbers",//设置分页控件的模式
@@ -91,5 +98,5 @@ var CONSTANT = {
                 return '<span title="' + data + '">' + data + '</span>';
             }
         }
-    }
+    },                  //dataTable插件option默认配置
 };

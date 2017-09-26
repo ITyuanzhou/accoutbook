@@ -88,6 +88,12 @@ var Login = function () {
                             }
                             window.location.href = "index";
                         }
+                        else if(res.flag == 0){
+                            $("#login_error").text(res.message);
+                            $('.alert-danger', $('.login-form')).show();
+                            if(confirm("你想要挤掉那名让你无法登陆的 "+ $("#login_userName").val() +" 用户吗?") == false)
+                                return;
+                        }
                         else{
                             $("#login_error").text(res.message);
                             $('.alert-danger', $('.login-form')).show();

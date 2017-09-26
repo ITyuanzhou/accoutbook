@@ -22,6 +22,8 @@
         <link href="../statics/assets/global/plugins/simple-line-icons/simple-line-icons.min.css" rel="stylesheet" type="text/css" />
         <link href="../statics/assets/global/plugins/bootstrap/css/bootstrap.min.css" rel="stylesheet" type="text/css" />
         <link href="../statics/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" rel="stylesheet" type="text/css" />
+        <link href="../statics/assets/global/plugins/bootstrap-toastr/toastr.min.css" rel="stylesheet" type="text/css" />
+        <link href="../statics/assets/global/plugins/bootstrap-select/css/bootstrap-select.min.css" rel="stylesheet" type="text/css" />
         <!-- END GLOBAL MANDATORY STYLES -->
         <!-- BEGIN DYMANICLY LOADED CSS FILES(all plugin and page related styles must be loaded between GLOBAL and THEME css files ) -->
         <link id="ng_load_plugins_before" />
@@ -32,7 +34,7 @@
         <link href="../statics/assets/global/css/plugins.min.css" rel="stylesheet" type="text/css" />
         <link href="../statics/assets/layouts/layout3/css/layout.min.css" rel="stylesheet" type="text/css" />
         <link href="../statics/assets/layouts/layout3/css/themes/default.min.css" rel="stylesheet" type="text/css" id="style_color" />
-        <link href="../statics/assets/layouts/layout3/css/custom.min.css" rel="stylesheet" type="text/css" />
+        <link href="../statics/assets/layouts/layout3/css/custom.css" rel="stylesheet" type="text/css" />
         <!-- END THEME STYLES -->
         <link rel="shortcut icon" href="favicon.ico" />
     </head>
@@ -55,7 +57,7 @@
             <div class="page-wrapper-row">
                 <div class="page-wrapper-top">
                     <!-- BEGIN HEADER -->
-                    <div data-ng-include="'../statics/project/index/tpl/header.html'" data-ng-controller="HeaderController" class="page-header"> </div>
+                    <div data-ng-include="'../statics/project/index/tpl/header.html'" data-ng-controller="HeaderController as vm" class="page-header"> </div>
                     <!-- END HEADER -->
                 </div>
             </div>
@@ -108,7 +110,13 @@
         <script src="../statics/assets/global/plugins/jquery-slimscroll/jquery.slimscroll.min.js" type="text/javascript"></script>
         <script src="../statics/assets/global/plugins/jquery.blockui.min.js" type="text/javascript"></script>
         <script src="../statics/assets/global/plugins/js.cookie.min.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/jquery-counterup/jquery.counterup.min.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/jquery-counterup/jquery.waypoints.min.js" type="text/javascript"></script>
         <script src="../statics/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/bootstrap-toastr/toastr.min.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/bootstrap-confirmation/bootstrap-confirmation.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/bootstrap-select/js/bootstrap-select.js" type="text/javascript"></script>
+        <script src="../statics/assets/global/plugins/bootstrap-select/js/i18n/defaults-zh_CN.js" type="text/javascript"></script>
         <!-- END CORE JQUERY PLUGINS -->
         <!-- BEGIN CORE ANGULARJS PLUGINS -->
         <script src="../statics/assets/global/plugins/angularjs/angular.js" type="text/javascript"></script>
@@ -123,9 +131,12 @@
         <script src="../statics/project/configs/router.js" type="text/javascript"></script>
         <script src="../statics/project/configs/configs.js" type="text/javascript"></script>
         <script src="../statics/project/index/tpl/tpl.js" type="text/javascript"></script>
+        <script src="../statics/project/utils/constant.js" type="text/javascript"></script>
+        <script src="../statics/project/utils/date.js" type="text/javascript"></script>
         <script src="../statics/project/common/directives/directives.js" type="text/javascript"></script>
         <script src="../statics/project/common/filter/filter.js" type="text/javascript"></script>
         <script src="../statics/project/common/services/pubSubService.js" type="text/javascript"></script>
+        <script src="../statics/project/common/services/businessService.js" type="text/javascript"></script>
         <!-- END APP LEVEL ANGULARJS SCRIPTS -->
         <!-- BEGIN APP LEVEL JQUERY SCRIPTS -->
         <script src="../statics/assets/global/scripts/app.min.js" type="text/javascript"></script>

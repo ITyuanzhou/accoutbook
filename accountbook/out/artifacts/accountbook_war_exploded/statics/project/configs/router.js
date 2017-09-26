@@ -13,21 +13,21 @@ angular.module('myApp')
 
         $stateProvider
             .state('home', {
-            url: '/',
-            templateUrl: 'statics/project/business/home/home.jsp',
-            data: {pageTitle: '主页'},
-            controller: 'HomeIndexCtrl as vm',
-            resolve: {
-                deps: ['$ocLazyLoad', function($ocLazyLoad) {
-                    return $ocLazyLoad.load({
-                        name: 'myApp',
-                        files: [
-                            '../statics/project/business/home/home.js'
-                        ]
-                    });
-                  }]
-               }
-            })
+               url: '/',
+               templateUrl: 'statics/project/business/home/home.jsp',
+               data: {pageTitle: '主页'},
+               controller: 'HomeIndexCtrl as vm',
+               resolve: {
+                  deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                      return $ocLazyLoad.load({
+                          name: 'myApp',
+                          files: [
+                             '../statics/project/business/home/home.js'
+                         ]
+                     });
+                   }]
+                 }
+               })
 
             .state('billingDetail', {
                 url: '/billingDetail',
@@ -48,7 +48,7 @@ angular.module('myApp')
 
             .state('dataManage', {
                 url: '/dataManage',
-                templateUrl: 'statics/project/business/data/dataManage.jsp',
+                templateUrl: 'statics/project/business/dataManage/dataManage.jsp',
                 data: {pageTitle: '数据管理',pageSubTitle:'管理员管理系统数据'},
                 controller: 'DataManageCtrl as vm',
                 resolve: {
@@ -56,12 +56,28 @@ angular.module('myApp')
                         return $ocLazyLoad.load({
                             name: 'myApp',
                             files: [
-                                '../statics/project/business/data/dataManage.js'
+                                '../statics/project/business/dataManage/dataManage.js'
                             ]
                         });
                     }]
                 }
             })
 
+            .state('dataStatistics', {
+                url: '/dataStatistics',
+                templateUrl: 'statics/project/business/dataStatistics/dataStatistics.jsp',
+                data: {pageTitle: '数据统计',pageSubTitle:'系统数据统计分析'},
+                controller: 'DataStatisticsCtrl as vm',
+                resolve: {
+                    deps: ['$ocLazyLoad', function($ocLazyLoad) {
+                        return $ocLazyLoad.load({
+                            name: 'myApp',
+                            files: [
+                                '../statics/project/business/dataStatistics/dataStatistics.js'
+                            ]
+                        });
+                    }]
+                }
+            })
 
     }]);

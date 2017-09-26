@@ -5,11 +5,11 @@
 <hibernate-mapping>
 
     <class name="com.zy.model.TbAttachEntity" table="tb_attach" schema="dbo" catalog="accountbook">
-        <id name="aid" column="aid">
-           <generator class="uuid2" />
+        <id name="attachId" column="attachID">
+            <generator class="uuid2" />
         </id>
-        <property name="afileName" column="afileName"/>
-        <property name="afileUuid" column="afileUUID"/>
-        <property name="afilePosition" column="afilePosition"/>
+        <property name="attachFileName" column="attachFileName"/>
+        <property name="attachFileUuid" column="attachFileUUID"/>
+        <property name="attachFilePosition" column="attachFilePosition"/>
     </class>
 </hibernate-mapping>

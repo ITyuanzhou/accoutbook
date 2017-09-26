@@ -5,15 +5,15 @@
 <hibernate-mapping>
 
     <class name="com.zy.model.TbUserEntity" table="tb_user" schema="dbo" catalog="accountbook">
-        <id name="uid" column="uid">
-            <generator class="uuid2" />
+        <id name="userId" column="userID">
+           <generator class="uuid2" />
         </id>
-        <property name="upwd" column="upwd"/>
-        <property name="uname" column="uname"/>
-        <property name="upersonBalance" column="upersonBalance"/>
-        <property name="uaaBalance" column="uaaBalance"/>
-        <property name="ulastLoginTime" column="ulastLoginTime"/>
+        <property name="userPwd" column="userPwd"/>
+        <property name="userName" column="userName"/>
+        <property name="userPersonBalance" column="userPersonBalance"/>
+        <property name="userAaBalance" column="userAABalance"/>
+        <property name="userLastLoginTime" column="userLastLoginTime"/>
 
-        <many-to-one name="uattach" class="com.zy.model.TbAttachEntity" column="uavatarAttachID" unique="true"></many-to-one>
+        <many-to-one name="userAttach" class="com.zy.model.TbAttachEntity" column="userAvatarAttachID" unique="true"></many-to-one>
     </class>
 </hibernate-mapping>

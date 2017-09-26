@@ -4,7 +4,7 @@
 
 'use strict';
 
-angular.module('myApp.tpl', [])
+angular.module('myApp.tpl', ['myApp.common.businessServices'])
      /* Setup App Main Controller */
     .controller('AppController', ['$scope', function ($scope) {
         $scope.$on('$viewContentLoaded', function () {
@@ -13,11 +13,30 @@ angular.module('myApp.tpl', [])
         });
     }])
 
-    .controller('HeaderController', ['$rootScope', '$scope',
-        function ($rootScope, $scope) {
+    .controller('HeaderController', ['$rootScope', '$scope','userService',
+        function ($rootScope, $scope,userService) {
+            var vm = this;
+
             $scope.$on('$includeContentLoaded', function () {
                 Layout.initHeader(); // init header
             });
+
+            var dropdownMenuInit = function () {
+                vm.LockScreen = function () {
+                    userService.logout();
+                    window.location.href = "lock";
+                };
+
+                vm.LogOut = function () {
+                    userService.logout();
+                    window.location.href = "login";
+                };
+            };
+
+            vm.Init = function () {
+                dropdownMenuInit();
+            };
+            vm.Init();
         }])
 
     .controller('PageHeadController', ['$scope', function($scope) {
