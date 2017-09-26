@@ -9,103 +9,8 @@
     <bookmark url="file://$PROJECT_DIR$/src/main/java/com/zy/controller/business/DetailAaBillingController.java" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="34d6fe25-4db3-4131-b7f9-0f545e5730f8" name="Default" comment="最近账单信息显示，新增账单">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/DownloadUploadController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/dao/BillingDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/dao/BillingTypeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/dao/impl/BillingDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/dao/impl/BillingTypeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbBillingEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbBillingTypeEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/BillingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/BillingTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/BillingServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/BillingTypeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbBillingEntity.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbBillingTypeEntity.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/2ca68f60-3db2-4850-bc1c-c2bd4835b340dmm8_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/4b34debc-7cfe-40c8-bd1b-a0ce8f663a9admm8_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/53bb32c8-16e8-44af-871a-e2acce2196c0u=3416110964,373572032&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/5ed16c12-362c-41f7-abde-39de21042321u=2571213679,1746874668&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/74737a5e-019b-414c-87d1-3bbb753049a0u=3416110964,373572032&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/895feafe-54ad-4be1-824e-acbf7b3965dbu=2571213679,1746874668&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/98edfcff-b4e7-4419-b81d-d6242700a734u=2571213679,1746874668&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/cdce77c5-4b8a-4444-b4b7-a9a70600657eu=2571213679,1746874668&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/e81667d9-dd9a-40a6-943c-9e4a725cc27bdmm8_2.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/files/avatar/ee6a4183-2677-4207-85ec-37f68f368d1cu=3416110964,373572032&amp;fm=26&amp;gp=0.jpg" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/data/dataManage.js" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/data/dataManage.jsp" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/controller/DownloadUploadController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/controller/UserController.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/dao/BillingDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/dao/BillingTypeDao.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/dao/impl/BillingDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/dao/impl/BillingTypeDaoImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/TbBillingEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/TbBillingTypeEntity.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/BillingService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/BillingTypeService.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/impl/BillingServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/impl/BillingTypeServiceImpl.class" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/TbBillingEntity.hbm.xml" afterPath="" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/target/classes/mapper/TbBillingTypeEntity.hbm.xml" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977/_metadata_/metadata" afterPath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977/_metadata_/metadata" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977/_metadata_/metadata.values.at" afterPath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977/_metadata_/metadata.values.at" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/HomeController.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/LoginController.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbAttachEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbAttachEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbDetailAaBillingEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbDetailAaBillingEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbUserEntity.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/TbUserEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/custom/Message.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/model/custom/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/DetailAaBillingService.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/DetailAaBillingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/BaseServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/DetailAaBillingServiceImpl.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/DetailAaBillingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/TestService.class" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/com/zy/service/impl/TestService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/controller/HomeController.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/controller/HomeController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/controller/LoginController.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/controller/LoginController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/TbAttachEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/model/TbAttachEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/TbDetailAaBillingEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/model/TbDetailAaBillingEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/TbUserEntity.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/model/TbUserEntity.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/model/custom/Message.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/model/custom/Message.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/DetailAaBillingService.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/service/DetailAaBillingService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/impl/BaseServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/service/impl/BaseServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/impl/DetailAaBillingServiceImpl.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/service/impl/DetailAaBillingServiceImpl.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/zy/service/impl/TestService.class" afterPath="$PROJECT_DIR$/target/classes/com/zy/service/impl/TestService.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/zy/test/hibernate/DaoTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/zy/test/hibernate/DaoTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/zy/test/hibernate/SixQueryTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/zy/test/hibernate/SixQueryTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/test-classes/com/zy/test/spring/SpringTest.class" afterPath="$PROJECT_DIR$/target/test-classes/com/zy/test/spring/SpringTest.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977.xml" afterPath="$PROJECT_DIR$/.idea/dataSources/0c38a03a-62d9-4c22-9aaf-1fa87b7e4977.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/vcs.xml" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
+    <list default="true" id="34d6fe25-4db3-4131-b7f9-0f545e5730f8" name="Default" comment="">
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbAttachEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbAttachEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbDetailAaBillingEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbDetailAaBillingEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbUserEntity.hbm.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/mapper/TbUserEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/spring.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/classes/spring.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/web.xml" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/WEB-INF/web.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-select/js/i18n/defaults-zh_CN.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-select/js/i18n/defaults-zh_CN.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/css/bootstrap-switch.min.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/global/plugins/bootstrap-switch/js/bootstrap-switch.min.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/layouts/layout3/css/custom.css" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/assets/layouts/layout3/css/custom.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/home/home.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/home/home.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/home/home.jsp" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/business/home/home.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/common/directives/directives.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/common/directives/directives.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/configs/configs.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/configs/configs.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/configs/router.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/configs/router.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/index.jsp" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/index.jsp" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/myApp.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/myApp.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/tpl/header.html" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/tpl/header.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/tpl/tpl.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/index/tpl/tpl.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/login/login.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/login/login.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/utils/constant.js" afterPath="$PROJECT_DIR$/out/artifacts/accountbook_war_exploded/statics/project/utils/constant.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TbAttachEntity.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TbAttachEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TbDetailAaBillingEntity.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TbDetailAaBillingEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/mapper/TbUserEntity.hbm.xml" afterPath="$PROJECT_DIR$/target/classes/mapper/TbUserEntity.hbm.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring-mvc.xml" afterPath="$PROJECT_DIR$/target/classes/spring-mvc.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/spring.xml" afterPath="$PROJECT_DIR$/target/classes/spring.xml" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -1292,7 +1197,7 @@
       <workItem from="1506389104544" duration="3303000" />
       <workItem from="1506407941132" duration="2042000" />
       <workItem from="1506424599493" duration="1343000" />
-      <workItem from="1506425975638" duration="717000" />
+      <workItem from="1506425975638" duration="781000" />
     </task>
     <task id="LOCAL-00001" summary="最近账单信息显示，新增账单">
       <created>1506425088251</created>
@@ -1308,7 +1213,14 @@
       <option name="project" value="LOCAL" />
       <updated>1506426602336</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="测试">
+      <created>1506426731439</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1506426731439</updated>
+    </task>
+    <option name="localTasksCounter" value="4" />
     <servers />
   </component>
   <component name="TestHistory">
@@ -1344,7 +1256,7 @@
     </history-entry>
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="689385000" />
+    <option name="totallyTimeSpent" value="689449000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="-8" y="-8" width="1936" height="1056" extended-state="0" />
@@ -1397,7 +1309,8 @@
     </ignored-roots>
     <MESSAGE value="最近账单信息显示，新增账单" />
     <MESSAGE value="增加忽略文件" />
-    <option name="LAST_COMMIT_MESSAGE" value="增加忽略文件" />
+    <MESSAGE value="测试" />
+    <option name="LAST_COMMIT_MESSAGE" value="测试" />
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
