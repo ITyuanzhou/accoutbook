@@ -15,7 +15,7 @@ public class Message {
 
     public Message(){
         this.flag = 1;
-        this.message = "通过";
+        this.message = "操作成功";
     }
 
 

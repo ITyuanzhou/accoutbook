@@ -1,0 +1,19 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.zy.model.TbAaBillingTypeEntity" table="tb_aaBillingType" schema="dbo" catalog="accountbook">
+        <id name="aaBilTypeId" column="aaBilTypeID">
+           <generator class="uuid2" />
+        </id>
+        <property name="aaBilTypeName" column="aaBilTypeName"/>
+        <property name="aaBilTypeCreTime" column="aaBilTypeCreTime"/>
+        <property name="aaBilTypeIsValid" column="aaBilTypeIsValid"/>
+
+        <many-to-one name="aaBilTypeCreUser" class="com.zy.model.TbUserEntity" column="aaBilTypeCreUserID"></many-to-one>
+        <many-to-one name="aaBilTypeIconAttach" class="com.zy.model.TbAttachEntity" column="aaBilTypeIconAttachID" unique="true"></many-to-one>
+
+    </class>
+</hibernate-mapping>

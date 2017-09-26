@@ -32,7 +32,7 @@ public class SixQueryTest {
             query.setString("name", "周源");
             List<TbUserEntity> list= query.list();
             for(TbUserEntity user:list){
-                System.out.println(user.getUname());
+                System.out.println(user.getUserName());
             }
         }catch(Exception e) {
             e.printStackTrace();
@@ -57,7 +57,7 @@ public class SixQueryTest {
             criteria.add(Restrictions.eq("name","周源"));
             List<TbUserEntity> list= criteria.list();
             for(TbUserEntity user:list){
-                System.out.println(user.getUid()+" "+user.getUname());
+                System.out.println(user.getUserId()+" "+user.getUserName());
             }
         }catch (Exception e){
             e.printStackTrace();
@@ -80,7 +80,7 @@ public class SixQueryTest {
 
         List<TbUserEntity> list = dc(detachedCriteria);
         for(TbUserEntity user:list){
-            System.out.println(user.getUid()+" "+user.getUname());
+            System.out.println(user.getUserId()+" "+user.getUserName());
         }
     }
 
@@ -116,7 +116,7 @@ public class SixQueryTest {
             Query q = session.createSQLQuery("select * from tb_user").addEntity(TbUserEntity.class);
             List<TbUserEntity> list = q.list();
             for(TbUserEntity user:list){
-                System.out.println(user.getUid()+" "+user.getUname());
+                System.out.println(user.getUserId()+" "+user.getUserName());
             }
         }catch (Exception e){
             e.printStackTrace();

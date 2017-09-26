@@ -1,16 +1,12 @@
 package com.zy.service.impl;
 
-import com.zy.model.TbBillingEntity;
+import com.zy.model.TbAaBillingEntity;
 import com.zy.model.TbUserEntity;
-import com.zy.service.BillingService;
-import com.zy.service.UserService;
-import org.hibernate.Session;
-import org.hibernate.SessionFactory;
+import com.zy.service.AABillingService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;
-import java.util.List;
 import java.util.Map;
 
 /**
@@ -20,7 +16,7 @@ import java.util.Map;
 public class TestService {
 
     @Autowired
-    BillingService billingService;
+    AABillingService billingService;
 
     public void test() throws Exception {
 
@@ -28,10 +24,10 @@ public class TestService {
         Map<String,String> map = new HashMap<String,String>();
         map.put("uname","周源");
 
-        TbBillingEntity billingEntity = billingService.findUnique(hql,map);
+        TbAaBillingEntity billingEntity = billingService.findUnique(hql,map);
 
-        TbUserEntity userEntity = billingEntity.getBuser();
-        System.out.println(userEntity.getUname());
+        TbUserEntity userEntity = billingEntity.getAaBilUser();
+        System.out.println(userEntity.getUserName());
 
 
     }

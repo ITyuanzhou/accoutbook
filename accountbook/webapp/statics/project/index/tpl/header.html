@@ -327,13 +327,13 @@
                                 <span class="badge badge-success"> 7 </span>
                             </a>
                         </li>
-                        <li class="divider"> </li>
+                        <li class="divider" href="#"> </li>
                         <li>
-                            <a href="#">
+                            <a ng-click="vm.LockScreen()">
                                 <i class="icon-lock"></i> Lock Screen </a>
                         </li>
                         <li>
-                            <a href="#">
+                            <a ng-click="vm.LogOut()">
                                 <i class="icon-key"></i> Log Out </a>
                         </li>
                     </ul>
@@ -379,6 +379,9 @@
                 </li>
                 <li>
                     <a ui-sref="dataManage">数据管理</a>
+                </li>
+                <li>
+                    <a ui-sref="dataStatistics">数据统计</a>
                 </li>
             </ul>
         </div>

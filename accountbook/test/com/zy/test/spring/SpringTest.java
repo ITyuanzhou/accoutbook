@@ -1,10 +1,6 @@
 package com.zy.test.spring;
 
-import com.zy.model.TbBillingEntity;
-import com.zy.model.TbBillingTypeEntity;
 import com.zy.model.TbUserEntity;
-import com.zy.service.BillingService;
-import com.zy.service.BillingTypeService;
 import com.zy.service.UserService;
 import com.zy.service.impl.TestService;
 import org.hibernate.SessionFactory;
@@ -15,7 +11,6 @@ import org.springframework.context.ApplicationContext;
 import org.springframework.context.support.ClassPathXmlApplicationContext;
 
 
-import java.sql.Timestamp;
 import java.util.*;
 
 /**
@@ -43,7 +38,7 @@ public class SpringTest {
 
         List<TbUserEntity> list = userService.find(hql,map);
         for (TbUserEntity userEntity:list) {
-            System.out.println(userEntity.getUid()+" "+userEntity.getUname()+" "+userEntity.getUpersonBalance());
+            System.out.println(userEntity.getUserId()+" "+userEntity.getUserName()+" "+userEntity.getUserAaBalance());
         }
     }
 
@@ -58,7 +53,7 @@ public class SpringTest {
 
         List<TbUserEntity> list = userService.find(detachedCriteria);
         for (TbUserEntity userEntity:list) {
-            System.out.println(userEntity.getUid()+" "+userEntity.getUname()+" "+userEntity.getUpersonBalance());
+            System.out.println(userEntity.getUserId()+" "+userEntity.getUserName()+" "+userEntity.getUserAaBalance());
         }
     }
 

@@ -4,65 +4,41 @@ package com.zy.model;
  * Created by ZJZL_HP on 2017/7/20.
  */
 public class TbAttachEntity {
-    private String aid;
-    private String afileName;
-    private String afileUuid;
-    private String afilePosition;
 
-    public String getAid() {
-        return aid;
+    private String attachId;
+    private String attachFileName;
+    private String attachFileUuid;
+    private String attachFilePosition;
+
+    public String getAttachId() {
+        return attachId;
     }
 
-    public void setAid(String aid) {
-        this.aid = aid;
+    public void setAttachId(String attachId) {
+        this.attachId = attachId;
     }
 
-    public String getAfileName() {
-        return afileName;
+    public String getAttachFileName() {
+        return attachFileName;
     }
 
-    public void setAfileName(String afileName) {
-        this.afileName = afileName;
+    public void setAttachFileName(String attachFileName) {
+        this.attachFileName = attachFileName;
     }
 
-    public String getAfileUuid() {
-        return afileUuid;
+    public String getAttachFileUuid() {
+        return attachFileUuid;
     }
 
-    public void setAfileUuid(String afileUuid) {
-        this.afileUuid = afileUuid;
+    public void setAttachFileUuid(String attachFileUuid) {
+        this.attachFileUuid = attachFileUuid;
     }
 
-    public String getAfilePosition() {
-        return afilePosition;
+    public String getAttachFilePosition() {
+        return attachFilePosition;
     }
 
-    public void setAfilePosition(String afilePosition) {
-        this.afilePosition = afilePosition;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        TbAttachEntity that = (TbAttachEntity) o;
-
-        if (aid != null ? !aid.equals(that.aid) : that.aid != null) return false;
-        if (afileName != null ? !afileName.equals(that.afileName) : that.afileName != null) return false;
-        if (afileUuid != null ? !afileUuid.equals(that.afileUuid) : that.afileUuid != null) return false;
-        if (afilePosition != null ? !afilePosition.equals(that.afilePosition) : that.afilePosition != null)
-            return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = aid != null ? aid.hashCode() : 0;
-        result = 31 * result + (afileName != null ? afileName.hashCode() : 0);
-        result = 31 * result + (afileUuid != null ? afileUuid.hashCode() : 0);
-        result = 31 * result + (afilePosition != null ? afilePosition.hashCode() : 0);
-        return result;
+    public void setAttachFilePosition(String attachFilePosition) {
+        this.attachFilePosition = attachFilePosition;
     }
 }

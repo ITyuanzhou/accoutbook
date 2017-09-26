@@ -6,97 +6,67 @@ import java.sql.Timestamp;
  * Created by ZJZL_HP on 2017/7/19.
  */
 public class TbUserEntity {
-    private String uid;
-    private String upwd;
-    private String uname;
-    private Double upersonBalance;
-    private Double uaaBalance;
-    private Timestamp ulastLoginTime;
-    private TbAttachEntity uattach;
+    private String userId;
+    private String userPwd;
+    private String userName;
+    private Double userPersonBalance;
+    private Double userAaBalance;
+    private Timestamp userLastLoginTime;
+    private TbAttachEntity userAttach;
 
-    public TbAttachEntity getUattach() {
-        return uattach;
+    public String getUserId() {
+        return userId;
     }
 
-    public void setUattach(TbAttachEntity uattach) {
-        this.uattach = uattach;
+    public void setUserId(String userId) {
+        this.userId = userId;
     }
 
-    public String getUid() {
-        return uid;
+    public String getUserPwd() {
+        return userPwd;
     }
 
-    public void setUid(String uid) {
-        this.uid = uid;
+    public void setUserPwd(String userPwd) {
+        this.userPwd = userPwd;
     }
 
-    public String getUpwd() {
-        return upwd;
+    public String getUserName() {
+        return userName;
     }
 
-    public void setUpwd(String upwd) {
-        this.upwd = upwd;
+    public void setUserName(String userName) {
+        this.userName = userName;
     }
 
-    public String getUname() {
-        return uname;
+    public Double getUserPersonBalance() {
+        return userPersonBalance;
     }
 
-    public void setUname(String uname) {
-        this.uname = uname;
+    public void setUserPersonBalance(Double userPersonBalance) {
+        this.userPersonBalance = userPersonBalance;
     }
 
-    public Double getUpersonBalance() {
-        return upersonBalance;
+    public Double getUserAaBalance() {
+        return userAaBalance;
     }
 
-    public void setUpersonBalance(Double upersonBalance) {
-        this.upersonBalance = upersonBalance;
+    public void setUserAaBalance(Double userAaBalance) {
+        this.userAaBalance = userAaBalance;
     }
 
-    public Double getUaaBalance() {
-        return uaaBalance;
+    public Timestamp getUserLastLoginTime() {
+        return userLastLoginTime;
     }
 
-    public void setUaaBalance(Double uaaBalance) {
-        this.uaaBalance = uaaBalance;
+    public void setUserLastLoginTime(Timestamp userLastLoginTime) {
+        this.userLastLoginTime = userLastLoginTime;
     }
 
-    public Timestamp getUlastLoginTime() {
-        return ulastLoginTime;
+    public TbAttachEntity getUserAttach() {
+        return userAttach;
     }
 
-    public void setUlastLoginTime(Timestamp ulastLoginTime) {
-        this.ulastLoginTime = ulastLoginTime;
-    }
-
-    @Override
-    public boolean equals(Object o) {
-        if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
-
-        TbUserEntity that = (TbUserEntity) o;
-
-        if (uid != null ? !uid.equals(that.uid) : that.uid != null) return false;
-        if (upwd != null ? !upwd.equals(that.upwd) : that.upwd != null) return false;
-        if (uname != null ? !uname.equals(that.uname) : that.uname != null) return false;
-        if (upersonBalance != null ? !upersonBalance.equals(that.upersonBalance) : that.upersonBalance != null)
-            return false;
-        if (uaaBalance != null ? !uaaBalance.equals(that.uaaBalance) : that.uaaBalance != null) return false;
-        if (ulastLoginTime != null ? !ulastLoginTime.equals(that.ulastLoginTime) : that.ulastLoginTime != null)
-            return false;
-
-        return true;
-    }
-
-    @Override
-    public int hashCode() {
-        int result = uid != null ? uid.hashCode() : 0;
-        result = 31 * result + (upwd != null ? upwd.hashCode() : 0);
-        result = 31 * result + (uname != null ? uname.hashCode() : 0);
-        result = 31 * result + (upersonBalance != null ? upersonBalance.hashCode() : 0);
-        result = 31 * result + (uaaBalance != null ? uaaBalance.hashCode() : 0);
-        result = 31 * result + (ulastLoginTime != null ? ulastLoginTime.hashCode() : 0);
-        return result;
+    public void setUserAttach(TbAttachEntity userAttach) {
+        this.userAttach = userAttach;
     }
 }

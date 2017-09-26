@@ -20,8 +20,11 @@ import java.util.Map;
 public abstract class BaseServiceImpl<T> implements BaseService<T>{
 
     @Autowired
-    BaseDao<T> baseDao;
+    protected BaseDao<T> baseDao;
 
+    public BaseDao<T> getBaseDao() {
+        return baseDao;
+    }
 
 
     /***********************************通用方法******************************************/

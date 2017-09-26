@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='utf-8'?>
+<!DOCTYPE hibernate-mapping PUBLIC
+    "-//Hibernate/Hibernate Mapping DTD 3.0//EN"
+    "http://www.hibernate.org/dtd/hibernate-mapping-3.0.dtd">
+<hibernate-mapping>
+
+    <class name="com.zy.model.TbAaBillingEntity" table="tb_aaBilling" schema="dbo" catalog="accountbook">
+        <id name="aaBilId" column="aaBilID">
+            <generator class="uuid2" />
+        </id>
+        <property name="aaBilPersonNumber" column="aaBilPersonNumber"/>
+        <property name="aaBilTotalAmount" column="aaBilTotalAmount"/>
+        <property name="aaBilTime" column="aaBilTime"/>
+        <property name="aaBilRemark" column="aaBilRemark"/>
+
+
+        <many-to-one name="aaBilUser" class="com.zy.model.TbUserEntity" column="aaBilUserID"></many-to-one>
+        <many-to-one name="aaBilBillingType" class="com.zy.model.TbAaBillingTypeEntity" column="aaBilTypeID"></many-to-one>
+        <set name="detailAaBillingEntitySet" cascade="save-update,delete">
+            <key column="detailAABilBillingID" not-null="true"></key>
+            <one-to-many class="com.zy.model.TbDetailAaBillingEntity"></one-to-many>
+        </set>
+    </class>
+</hibernate-mapping>

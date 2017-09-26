@@ -1,7 +1,8 @@
-package com.zy.controller;
+package com.zy.controller.common;
 
 import com.zy.model.TbAttachEntity;
 import com.zy.service.AttachService;
+import com.zy.projectUtils.ProjectConstant;
 import org.apache.commons.io.FileUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.http.HttpHeaders;
@@ -42,7 +43,7 @@ public class DownloadUploadController {
         String filePosition = map.get("filePosition")[0];  //文件存放的相对位置
 
         ServletContext sc = request.getSession().getServletContext();
-        String filePath = sc.getRealPath(filePosition)+"/"+fileUUID+fileName; // 文件存放物理位置
+        String filePath = sc.getRealPath(filePosition)+"/"+ fileUUID + ProjectConstant.File_Bound_Symbol + fileName; // 文件存放物理位置
         File file = new File(filePath);
 
         String dfileName = new String(fileName.getBytes("UTF-8"), "ISO8859-1");
@@ -75,23 +76,23 @@ public class DownloadUploadController {
                     if (myFileName.trim() != "") {
 
                         myFileName = myFileName.replace(" ","");
-                        tbAttach.setAfileName(myFileName);
+                        tbAttach.setAttachFileName(myFileName);
                         String randomUUID = UUID.randomUUID().toString();
-                        tbAttach.setAfileUuid(randomUUID);
+                        tbAttach.setAttachFileUuid(randomUUID);
 
                         //重命名上传后的文件名
-                        String fileName = randomUUID + myFileName;
-                        // 获得项目的路径
-                        ServletContext sc = request.getSession().getServletContext();
-                        String directoryPath = sc.getRealPath(position);
+                        String fileName = randomUUID + ProjectConstant.File_Bound_Symbol + myFileName;
+
+                        String sc = request.getSession().getServletContext().getRealPath("");
+                        String baseSc = sc.substring(0,sc.substring(0,sc.lastIndexOf("\\")).lastIndexOf("\\"));
+                        String directoryPath = baseSc + ProjectConstant.TempFile_Relative_Path;
                         File f = new File(directoryPath);
                         if (!f.exists())
                             f.mkdirs();
                         // 上传位置
+                        tbAttach.setAttachFilePosition(position);
 
-                        tbAttach.setAfilePosition(position);
-
-                        String filePath = sc.getRealPath(position)+"/"+fileName; // 设定文件保存的目录
+                        String filePath = directoryPath+"/"+fileName; // 设定文件保存的目录
                         File localFile = new File(filePath);
                         file.transferTo(localFile);
 

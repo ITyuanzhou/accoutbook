@@ -19,7 +19,7 @@ public class DaoTest {
             session.beginTransaction();
 
             TbUserEntity user = new TbUserEntity();
-            user.setUname("周源");
+            user.setUserName("周源");
             session.save(user);
 
             session.getTransaction().commit();
@@ -39,7 +39,7 @@ public class DaoTest {
             session.beginTransaction();
 
             TbUserEntity user=(TbUserEntity)session.load(TbUserEntity.class, "8a7d2a9b5cafc760015cafc762000000");
-            user.setUname("王一杰");
+            user.setUserName("王一杰");
             session.update(user);
             session.getTransaction().commit();
         }catch(Exception e) {
@@ -58,8 +58,8 @@ public class DaoTest {
             session.beginTransaction();
 
             TbUserEntity user=(TbUserEntity)session.load(TbUserEntity.class, "8a7d2a9b5cafc760015cafc762000000");
-            System.out.println(user.getUid());
-            System.out.println(user.getUname());
+            System.out.println(user.getUserId());
+            System.out.println(user.getUserName());
             session.getTransaction().commit();
         }catch(Exception e) {
             e.printStackTrace();

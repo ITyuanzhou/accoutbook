@@ -1,74 +1,80 @@
 package com.zy.model;
 
 /**
- * Created by ZJZL_HP on 2017/7/19.
+ * Created by ZJZL_HP on 2017/8/16.
  */
 public class TbDetailAaBillingEntity {
-    private String did;
-    private Double damount;
-    private int dchargeState;
-    private TbBillingEntity dbilling;
-    private TbUserEntity duser;
+    private String detailAaBilId;
+    private Double detailAaBilAmount;
+    private int detailAaBilChargeState;
 
-    public TbBillingEntity getDbilling() {
-        return dbilling;
+    private TbAaBillingEntity detailAaBilBilling;
+    private TbUserEntity detailAaBilUser;
+
+    public String getDetailAaBilId() {
+        return detailAaBilId;
     }
 
-    public void setDbilling(TbBillingEntity dbilling) {
-        this.dbilling = dbilling;
+    public void setDetailAaBilId(String detailAaBilId) {
+        this.detailAaBilId = detailAaBilId;
     }
 
-    public TbUserEntity getDuser() {
-        return duser;
+    public Double getDetailAaBilAmount() {
+        return detailAaBilAmount;
     }
 
-    public void setDuser(TbUserEntity duser) {
-        this.duser = duser;
+    public void setDetailAaBilAmount(Double detailAaBilAmount) {
+        this.detailAaBilAmount = detailAaBilAmount;
     }
 
-    public String getDid() {
-        return did;
+    public int getDetailAaBilChargeState() {
+        return detailAaBilChargeState;
     }
 
-    public void setDid(String did) {
-        this.did = did;
+    public void setDetailAaBilChargeState(int detailAaBilChargeState) {
+        this.detailAaBilChargeState = detailAaBilChargeState;
     }
 
-    public Double getDamount() {
-        return damount;
+    public TbAaBillingEntity getDetailAaBilBilling() {
+        return detailAaBilBilling;
     }
 
-    public void setDamount(Double damount) {
-        this.damount = damount;
+    public void setDetailAaBilBilling(TbAaBillingEntity detailAaBilBilling) {
+        this.detailAaBilBilling = detailAaBilBilling;
     }
 
-    public int getDchargeState() {
-        return dchargeState;
+    public TbUserEntity getDetailAaBilUser() {
+        return detailAaBilUser;
     }
 
-    public void setDchargeState(int dchargeState) {
-        this.dchargeState = dchargeState;
+    public void setDetailAaBilUser(TbUserEntity detailAaBilUser) {
+        this.detailAaBilUser = detailAaBilUser;
     }
 
     @Override
     public boolean equals(Object o) {
         if (this == o) return true;
-        if (o == null || getClass() != o.getClass()) return false;
+        if (!(o instanceof TbDetailAaBillingEntity)) return false;
 
         TbDetailAaBillingEntity that = (TbDetailAaBillingEntity) o;
 
-        if (dchargeState != that.dchargeState) return false;
-        if (did != null ? !did.equals(that.did) : that.did != null) return false;
-        if (damount != null ? !damount.equals(that.damount) : that.damount != null) return false;
-
-        return true;
+        if (getDetailAaBilChargeState() != that.getDetailAaBilChargeState()) return false;
+        if (getDetailAaBilId() != null ? !getDetailAaBilId().equals(that.getDetailAaBilId()) : that.getDetailAaBilId() != null)
+            return false;
+        if (getDetailAaBilAmount() != null ? !getDetailAaBilAmount().equals(that.getDetailAaBilAmount()) : that.getDetailAaBilAmount() != null)
+            return false;
+        if (getDetailAaBilBilling() != null ? !getDetailAaBilBilling().equals(that.getDetailAaBilBilling()) : that.getDetailAaBilBilling() != null)
+            return false;
+        return getDetailAaBilUser() != null ? getDetailAaBilUser().equals(that.getDetailAaBilUser()) : that.getDetailAaBilUser() == null;
     }
 
     @Override
     public int hashCode() {
-        int result = did != null ? did.hashCode() : 0;
-        result = 31 * result + (damount != null ? damount.hashCode() : 0);
-        result = 31 * result + dchargeState;
+        int result = getDetailAaBilId() != null ? getDetailAaBilId().hashCode() : 0;
+        result = 31 * result + (getDetailAaBilAmount() != null ? getDetailAaBilAmount().hashCode() : 0);
+        result = 31 * result + getDetailAaBilChargeState();
+        result = 31 * result + (getDetailAaBilBilling() != null ? getDetailAaBilBilling().hashCode() : 0);
+        result = 31 * result + (getDetailAaBilUser() != null ? getDetailAaBilUser().hashCode() : 0);
         return result;
     }
 }

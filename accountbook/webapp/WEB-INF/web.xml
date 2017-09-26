@@ -9,20 +9,21 @@
 
   <display-name>Archetype Created Web Application</display-name>
 
-  <welcome-file-list>
-    <welcome-file>index.jsp</welcome-file>
-  </welcome-file-list>
 
   <context-param>
     <param-name>contextConfigLocation</param-name>
     <param-value>classpath:spring.xml</param-value>
   </context-param>
 
+  <!-- session listener -->
+  <listener>
+    <listener-class>com.zy.utils.listener.SessionListener</listener-class>
+  </listener>
+
   <!-- Spring监听器,监听servlet启动 -->
   <listener>
     <listener-class>org.springframework.web.context.ContextLoaderListener</listener-class>
   </listener>
-
 
   <!--配置springmvc DispatcherServlet-->
   <servlet>
@@ -72,4 +73,18 @@
     <url-pattern>/*</url-pattern>
   </filter-mapping>
 
+  <!--session会话的有效时长-->
+  <session-config>
+    <session-timeout>30</session-timeout>
+  </session-config>
+
+  <!--错误页面处理-->
+  <error-page>
+    <error-code>404</error-code>
+    <location>/statics/project/index/error/404.html</location>
+  </error-page>
+  <error-page>
+    <error-code>500</error-code>
+    <location>/statics/project/index/error/500.html</location>
+  </error-page>
 </web-app>
